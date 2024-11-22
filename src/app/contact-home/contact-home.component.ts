@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactHomeComponent implements OnInit {
   isUnchanged = true;
 
-  onCancel(event?: KeyboardEvent) {
+  onCancel(event?: Event) {
     const evtMsg = event
       ? ' Event target is ' + (event.target as HTMLElement).textContent
       : '';
