@@ -1,5 +1,5 @@
 <div class="myServices">
-  <ul>
-    <li *ngFor="let bankingService of bankingServices">{{bankingService}}</li>
+  <ul *ngFor="let bankingService of bankingServices">
+    <li *ngIf="bankingService.years > 2">{{bankingService.type}}</li>
   </ul>
 </div>
